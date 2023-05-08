@@ -58,6 +58,7 @@ def test_torch_cross_entropy(
     inputs_dtype, input = dtype_and_input
     target_dtype, target = dtype_and_target
     weights_dtype, weights = dtype_and_weights
+
     helpers.test_frontend_function(
         input_dtypes=inputs_dtype + target_dtype + weights_dtype,
         frontend=frontend,
